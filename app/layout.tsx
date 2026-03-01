@@ -8,14 +8,23 @@ const _geist = Geist({ subsets: ['latin'] })
 const _geistMono = Geist_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'FirstBell  - Shop At Online',
+  title: 'FirstBell',
   description: 'Play Fun Learn',
-  keywords: 'FirstBell, online shopping, beauty, toys, gifts, art, home decor',
+  keywords:
+    'FirstBell, online shopping, beauty, toys, gifts, art, home decor',
   generator: 'FirstBell',
+
+  // ✅ Google Site Verification Added Here
+  verification: {
+    google: 'K5LcB9x4XOkVYchLNNiEnMmA1OwJKUEnFuhxMRdnZnE',
+  },
+
   openGraph: {
-    title: 'FirstBell ',
+    title: 'FirstBell',
     description: 'Play Fun Learn',
     type: 'website',
+    url: 'https://first-bell-e.vercel.app',
+    siteName: 'FirstBell',
   },
 }
 
@@ -34,7 +43,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased pb-24">{children}
+      <body className={`${_geist.className} antialiased pb-24`}>
+        {children}
         <BottomNav />
       </body>
     </html>
