@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
   // ✅ Google Site Verification Added Here
   verification: {
-    google: 'K5LcB9x4XOkVYchLNNiEnMmA1OwJKUEnFuhxMRdnZnE',
+    google: 'cXEeUXUxRbpKTmIj95Gogg9LTk_ny6qtpsX-9SBIKzs',
   },
 
   openGraph: {
